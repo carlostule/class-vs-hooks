@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import ChangeButtonColor from './class/ChangeButtonColor';
+import ChangeButtonColorH from './hook/ChangeButtonColorH';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Class vs Hook</h3>
+      <ChangeButtonColor />
+      <hr />
+      <ChangeButtonColorH />
     </div>
   );
 }
